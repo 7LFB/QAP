@@ -24,7 +24,7 @@ This is the github repository of *Prompting Vision Foundation Models for Patholo
 The framework of the proposed QAP model:
 
 <div align="center">
-<img src='./assets/framework' width='100%'>
+<img src='./assets/framework.png' width='100%'>
 </div>
 
 ## Enhanced Interpretability
