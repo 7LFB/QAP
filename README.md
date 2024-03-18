@@ -12,8 +12,6 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2024
 
 </div>
 
-## If you find this work useful for your research, please kindly cite our paper and star our repo.
-
 ## Updates
 - [03/2024] Code will be released soon.
 
