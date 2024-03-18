@@ -3,6 +3,14 @@
 <!-- <h1>QAP </h1> -->
 <h2 class="papername"> Prompting Vision Foundation Models for Pathology Image Analysis </h2>
 <div>
+    <a target="_blank">Chong Yin</a>,
+    <a target="_blank">Siqi Liu</a>,
+    <a target="_blank">Kaiyang Zhou</a>,
+    <a target="_blank">Vincent Wai-Sun Wong</a>,
+    <a target="_blank">Pong C. Yuen</a>
+</div>
+
+<div>
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2024
 </div>
 
