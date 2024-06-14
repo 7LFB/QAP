@@ -15,10 +15,8 @@
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2024
 </div>
 
-<div>
-[**PDF**](https://openaccess.thecvf.com/content/CVPR2024/papers/Yin_Prompting_Vision_Foundation_Models_for_Pathology_Image_Analysis_CVPR_2024_paper.pdf)
-[**Video**](https://www.youtube.com/watch?v=NVvSgUNN2ro)
-</div>
+<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yin_Prompting_Vision_Foundation_Models_for_Pathology_Image_Analysis_CVPR_2024_paper.pdf"> PDF </a> 
+<a href="https://www.youtube.com/watch?v=NVvSgUNN2ro"> Video </a>
 
 <br>
   
