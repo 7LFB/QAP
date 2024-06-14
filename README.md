@@ -21,7 +21,8 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2024
 </div>
 
 ## Updates
-- [03/2024] Code is coming soon.
+- TO DO: Add instruction
+- [06/2024] Code Released.
 
 ## Introduction
 
