@@ -1,7 +1,8 @@
+
 <div align="center">
 
 <!-- <h1>QAP </h1> -->
-<h2 class="papername"> Prompting Vision Foundation Models for Pathology Image Analysis (https://openaccess.thecvf.com/content/CVPR2024/papers/Yin_Prompting_Vision_Foundation_Models_for_Pathology_Image_Analysis_CVPR_2024_paper.pdf) </h2>
+<h2 class="papername"> Prompting Vision Foundation Models for Pathology Image Analysis </h2>
 <div>
     <a target="_blank">Chong Yin</a>,
     <a target="_blank">Siqi Liu</a>,
@@ -12,6 +13,11 @@
 
 <div>
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2024
+</div>
+
+<div>
+[**PDF**](https://openaccess.thecvf.com/content/CVPR2024/papers/Yin_Prompting_Vision_Foundation_Models_for_Pathology_Image_Analysis_CVPR_2024_paper.pdf)
+[**Video**](https://www.youtube.com/watch?v=NVvSgUNN2ro)
 </div>
 
 <br>
