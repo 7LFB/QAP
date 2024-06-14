@@ -51,14 +51,15 @@ We further explore learning various prompts. The tissue structure segments provi
 ![Score](assets/explicitness.png)
 
 
-<!-- ## Citation
+## Citation
 
 If you find this work useful for your research, please kindly cite our paper:
 ```
-@inproceedings{chen2024lion,
-    title={Prompting Vision Foundation Models for Pathology Image Analysis}, 
-    author={Chong Yin, Siqi Liu, Kaiyang Zhou, Vincent Wai-Sun Wong, Pong C. Yuen},
-    booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2024}
+@inproceedings{yin2024prompting,
+  title={Prompting Vision Foundation Models for Pathology Image Analysis},
+  author={Yin, Chong and Liu, Siqi and Zhou, Kaiyang and Wong, Vincent Wai-Sun and Yuen, Pong C},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11292--11301},
+  year={2024}
 }
-``` -->
+```
