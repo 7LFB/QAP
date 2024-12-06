@@ -25,7 +25,7 @@ from tensorboardX import SummaryWriter
 
 from torch.optim.lr_scheduler import MultiStepLR, LambdaLR, CosineAnnealingLR, StepLR
 
-import datasets
+from myDatasets.myPromptAugTileDataset import myTileDataset
 from core.function import train, validate, test
 from utils.params import *
 from utils.utils import *
@@ -61,11 +61,6 @@ def main():
 
     CKPT_PATH=os.path.join(args.snapshot_dir,'best.pth')
 
-    if args.xprompt:
-        from datasets.myPromptTileDataset import myTileDataset
-    else:
-        from datasets.myTileDataset import myTileDataset
-
     if 'none' not in args.prompt_index_str_s:
         args.prompt_s_num=len(args.prompt_index_str_s.split('-'))
     else:
@@ -99,10 +94,10 @@ def main():
     x_test =readlines_from_txt(_x_test)
 
 
-    train_dataset=myTileDataset(x_train,args.data_dir,h=args.img_h,w=args.img_w,is_training=True,xprompt=args.xprompt,prompt_index_str_s=args.prompt_index_str_s,prompt_index_str_m=args.prompt_index_str_m,norm_props=args.norm_props)
-    val_dataset=myTileDataset(x_val,args.data_dir,h=args.img_h,w=args.img_w,xprompt=args.xprompt,prompt_index_str_s=args.prompt_index_str_s,prompt_index_str_m=args.prompt_index_str_m,norm_props=args.norm_props)
-    test_dataset=myTileDataset(x_test,args.data_dir,h=args.img_h,w=args.img_w,xprompt=args.xprompt,prompt_index_str_s=args.prompt_index_str_s,prompt_index_str_m=args.prompt_index_str_m,norm_props=args.norm_props)
-
+    train_dataset=myTileDataset(x_train,args.data_dir,h=args.img_h,w=args.img_w,is_training=True,xprompt=args.xprompt,prompt_index_str_s=args.prompt_index_str_s,prompt_index_str_m=args.prompt_index_str_m,norm_props=args.norm_props,augment=args.augment,auto_augment=args.auto_augment,args=args)
+    val_dataset=myTileDataset(x_val,args.data_dir,h=args.img_h,w=args.img_w,xprompt=args.xprompt,prompt_index_str_s=args.prompt_index_str_s,prompt_index_str_m=args.prompt_index_str_m,norm_props=args.norm_props,args=args)
+    test_dataset=myTileDataset(x_test,args.data_dir,h=args.img_h,w=args.img_w,xprompt=args.xprompt,prompt_index_str_s=args.prompt_index_str_s,prompt_index_str_m=args.prompt_index_str_m,norm_props=args.norm_props,args=args)
+    
     trainloader = torch.utils.data.DataLoader(
         train_dataset,
         batch_size=args.batch_size,
