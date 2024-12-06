@@ -15,10 +15,8 @@
         - tile-31-x-y.png
 
  # Dataloader
-  - myTileDataset.py
-  - myPromptTileDataset.py
-  - mySlideDataset.py
-  - myPromptSlide.py
+  - myPromptAugTileDataset.py (used for tile processing)
+  - myPromptSlideDataset.py (used for wsi processing)
 
 
 
