@@ -10,6 +10,7 @@ import time
 import timeit
 from pathlib import Path
 import pandas as pd
+import importlib
 
 import re
 
@@ -84,26 +85,9 @@ def main():
     # prepare data
 
 
-    if args.mversion==0:
-        from models.model_v0  import XPrompt
-    if args.mversion==1:
-        from models.model_v1  import XPrompt
-    if args.mversion==11:
-        from models.model_v11  import XPrompt
-    if args.mversion==14:
-        from models.model_v14  import XPrompt
-    if args.mversion==3:
-        from models.model_v3  import XPrompt
-    if args.mversion==31:
-        from models.model_v31  import XPrompt
-    if args.mversion==32:
-        from models.model_v32  import XPrompt
-    if args.mversion==33:
-        from models.model_v33  import XPrompt
-    if args.mversion==34:
-        from models.model_v34  import XPrompt
-    if args.mversion==36:
-        from models.model_v36  import XPrompt
+    # # model configuration
+    module=importlib.import_module(f'models.model_v{args.mversion}')
+    XPrompt = getattr(module, 'XPrompt')
     model=XPrompt(args)
     print(toRed(f'version-{args.mversion}'))
 
