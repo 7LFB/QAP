@@ -105,9 +105,10 @@ def parse_args():
     parser.add_argument('--activation', default='relu', type=str)
 
 
-    # for properties generatoin
+    # for properties generation
     parser.add_argument('--max', default=1, type=int)
     parser.add_argument('--filter', default=0.1, type=float)
+    # Generate prior segmentation (either white regions or nuclei) using online or offline processing manner
     parser.add_argument('--prior_nuclei', default=0, type=int)
     parser.add_argument('--prior_white', default=0, type=int)
     parser.add_argument('--dilate', default=0, type=int)
@@ -115,6 +116,7 @@ def parse_args():
     parser.add_argument('--area_thd', default=0, type=int)
     parser.add_argument('--convex_hull', default=0, type=int)
     parser.add_argument('--clear_border', default=0, type=int)
+    # Generate attributes (function or histogram) using either online or offline processing manner
     parser.add_argument('--generate_props', default=0, type=int)
     parser.add_argument('--sample_number', default=10, type=int) # convering distribution into sampling vector, how many points to sampler, default=10
     parser.add_argument('--nuclei_folder', default='nuclei_segment_watershed', type=str)
